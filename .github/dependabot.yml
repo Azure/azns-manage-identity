@@ -6,3 +6,12 @@ updates:
       interval: "daily"
     allow:
       - dependency-name: "@azure-tools/typespec-client-generator-cli"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    groups:
+      github-actions:
+        patterns: ["*"]
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
